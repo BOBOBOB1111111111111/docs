@@ -116,13 +116,8 @@ Zu sicherendes Verzeichnis angeben (/home/Client/)= /<Verzeichnis>
 RemoteHost(root@123.123.123.123:)= Login Name des Benutzers auf dem RemoteHost sowie Adresse angeben: name@IP/Domain
 Ziel Verzeichnis für die Daten auf dem RemoteHost(:/home/Backup/Home-Server1/)= :/<Pfad-zum-Ziel-Verzeichnis>
 
-Ausführen des Befehls: 
+Der Ordner/ die Datei(en) wurde erfolgreicht syncronisiert/gesichert in das Remote Verzeichnis nachdem der befehl ausgeführt wurde.
 
-![](https://screensaver01.zap-hosting.com/index.php/s/n3YMZgEWXrJsDct/preview)
-
-Der Ordner/ die Datei(en) wurde erfolgreicht syncronisiert/gesichert in das Remote Verzeichnis: 
-
-![](https://screensaver01.zap-hosting.com/index.php/s/BDNcNnwiENZR9bc/preview)
 
 Wenn jetzt eine Datei etc. im Client Ordner gelöscht wird, so verbleibt sie weiterhin im Backup Ordner auf dem Remote Host. 
 Da die Date aber immer 1:1 syncron sein sollen, kann der rsync Befehl leicht abgeändert werden, diese Änderung sorgt dann dafür das Daten etc. die im Client Ordner nicht mehr vorhanden sind auch im Backup Ordner auf dem Remote Host entfernt werden. 
@@ -155,19 +150,13 @@ Ziel Verzeichnis für die Daten auf dem RemoteHost(:/home/Backup/Home-Server1/)=
 Damit der Befehl nicht immer manuell ausgeführt werden muss, kann dieser einfach in ein Cronjob gesetzt werden. 
 Es soll z.b täglich um 3 Uhr Morgens ein Backup erstellt werden: 
 
-Crontab -e öffnen: 
-
-![](https://screensaver01.zap-hosting.com/index.php/s/GsPeM9xpWYbnWdZ/preview)
+Crontab -e öffnen
 
 Mit der Ziffer 1 kann "nano" als Editor genutzt werden.
 Mit der Ziffer 2 kann "vim" als Editor genutzt werden. 
 
 Nachem die Datei z.b mit Nano geöffnet wurde, kann ein Crontab generiert und eingetragen werden. 
 Ein Crontab kann z.b mit diesem [Generator](https://crontab-generator.org/) erstellt werden. 
-
-Der eingetragene Crontab sieht dann wie folgt aus: 
-
-![](https://screensaver01.zap-hosting.com/index.php/s/sqFdc6wyqkGAgZL/preview)
 
 Jeden Tag um 3 Uhr morgens wird der Befehl ausgeführt und es wird ein Backup erstellt. 
 
