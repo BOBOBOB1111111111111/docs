@@ -206,7 +206,7 @@ Dieser Befehl legt die Menge an Ressourcen fest, welche beim Ernten gefarmt werd
 
 | Datentyp | Standardwert | Wertebereich |
 | :------: | :----------: | :----------: |
-|  Float   |   1.00000    |      ∞       |
+|  Float   |   2.00000    |      ∞       |
 
 **HarvestHealthMultiplier**
 
